@@ -24,7 +24,7 @@ module Indirizzo
     def initialize (text, options={})
       @options = {:expand_streets => true}.merge(options)
 
-      raise ArgumentError, "no text provided" unless text and !text.empty?
+      raise ArgumentError, "no text provided" unless text && !text.strip.empty?
       if text.class == Hash
         @text = ""
         assign_text_to_address text
@@ -32,6 +32,7 @@ module Indirizzo
         @text = clean text
         parse
       end
+      @country = 'United States' # this gem is US only for now
     end
 
     # Removes any characters that aren't strictly part of an address string.
