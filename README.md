@@ -1,11 +1,11 @@
 # Introduction
 
+My fork of Indirizzo gem just renaming it in order to comply with ruby naming conventions
+and to get rid of annoying require in Gemfile.
+
 Indirizzo is a simple extraction of the Address class (along with the numbers
 and constants handling code) from [Geocommons](http://geocommons.com/)'
 [Geocoder::US 2.0](https://github.com/geocommons/geocoder) gem.
-
-[![Build Status](https://secure.travis-ci.org/daveworth/Indirizzo.png)](http://travis-ci.org/daveworth/Indirizzo)
-[![Gem Version](https://badge.fury.io/rb/Indirizzo.png)](http://badge.fury.io/rb/Indirizzo)
 
 ## Background
 
@@ -24,7 +24,7 @@ my simple needs. I simply need to parse addresses that may, or may not, be
 ## Usage
 
 ```ruby
-require 'Indirizzo'
+gem 'indirizzo', github: 'pineapplethief/indirizzo'
 Indirizzo::Address.new("some address")
 ```
 

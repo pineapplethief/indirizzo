@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = %q{Indirizzo}
+  s.name = %q{indirizzo}
   s.version = "0.1.7"
 
   s.authors = [%q{Dave Worth}]
